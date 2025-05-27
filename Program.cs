@@ -10,6 +10,14 @@ namespace ProCommandos
     {
         static void Main(string[] args)
         {
+            Commando c1 = new Commando("Shachar", "Alfa");
+            AirCommando Ac = new AirCommando("or", "ppp");
+            SeaCommando Sc = new SeaCommando("bar", "639");
+            Commando[] Soldiers = {Ac ,c1 ,Sc };
+            foreach(Commando item in  Soldiers)
+            {
+                item.Attack();
+            }
         }
     }
 }
