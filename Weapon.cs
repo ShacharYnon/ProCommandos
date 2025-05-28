@@ -10,7 +10,7 @@ namespace ProCommandos
     {
         string Name = "";
         string Manufacturer = "";
-        int NumberOfBalls = 0;
+        protected int NumberOfBalls = 0;
 
         public Weapon(string name, string manufacturer, int numberOfBalls)
         {
@@ -19,12 +19,12 @@ namespace ProCommandos
             NumberOfBalls = numberOfBalls;
         }
 
-        public void Shoot()
+        public override string ToString()
         {
-            NumberOfBalls = NumberOfBalls - 1;
-            Console.WriteLine("Shoot");
-            Console.WriteLine($"NumberOfBalls now is {NumberOfBalls}");
+            return "Name: " + Name +
+                " Number Of Balls: " + NumberOfBalls;
         }
+
 
     }
 }

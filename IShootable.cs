@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProCommandos
 {
-    internal class Program
+    internal interface IShootable
     {
-        static void Main(string[] args)
-        {
-            Game game = new Game();
-            game.Run();
-        }
-      
+        void Shoot();
+        void Balls();
     }
 }
