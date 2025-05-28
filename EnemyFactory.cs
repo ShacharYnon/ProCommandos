@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProCommandos
 {
-    internal class Program
+    internal class EnemyFactory
     {
-        static void Main(string[] args)
+        List<Enemy> EnemyList = new List<Enemy>();
+
+        public void Factory()
         {
-            Game game = new Game();
-            game.Run();
+            EnemyList.Add(new Enemy());
         }
-      
     }
 }

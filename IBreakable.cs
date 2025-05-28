@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProCommandos
 {
-    internal class Program
+    internal interface IBreakable
     {
-        static void Main(string[] args)
-        {
-            Game game = new Game();
-            game.Run();
-        }
-      
+        void status();
+        void MaximumNumberOfBlows();
+        void NumberOfBlowSoFar();
     }
 }

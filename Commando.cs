@@ -11,7 +11,7 @@ namespace ProCommandos
         private string Name ;
         public string NameCode { get; set;}
         public string[] Tools = { "Water bottle", "Bag", "Rope", "Chisel", "Hammer" };
-        public string Status = "";
+        public string Status ;
 
         public Commando(string name, string namecode)
         {
